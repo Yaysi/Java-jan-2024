@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        Scanner in = new Scanner(System.in);
-//        System.out.println("Enter the length of a rectangle : ");
-//        int length = in.nextInt();
-//        System.out.println("Enter the breadth of a rectangle : ");
- //       int breadth = in.nextInt();
-  //      int area = length*breadth;
-  //      System.out.println("The area of a rectangle is : "+area );
+       Scanner in = new Scanner(System.in);
+        System.out.println("Enter the length of a rectangle : ");
+        int length = in.nextInt();
+        System.out.println("Enter the breadth of a rectangle : ");
+        int breadth = in.nextInt();
+        int area = length*breadth;
+       System.out.println("The area of a rectangle is : "+area );
 
         Scanner number = new Scanner(System.in);
         System.out.println("Write your first number : ");
@@ -25,6 +25,11 @@ public class Main {
                 System.out.println("the number is negative " +number1);}
 
              else System.out.println("the number = Zero");
+
+
+
+
+
 
     }
 }

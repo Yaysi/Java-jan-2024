@@ -30,10 +30,15 @@ public class Par_si_Impar {
                 System.out.println("Good");
             case 'C':
                 System.out.println("Average");
-
         }
 
+        String word = "Hello";
+        if (word.length()>5) {
+            System.out.println(word.length());
+        } else if (word=="Hello") {
+            System.out.println(word);
 
+        }
 
 
     }

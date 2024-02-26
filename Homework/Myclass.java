@@ -15,7 +15,11 @@ public class Myclass {
 
         Contracts contract1= new Contracts("Permanent", "Electronica", 5);
 
+        Animaux animal1 = new Animaux("Chat", "Pet "," Noire");
+        Animaux animal2 = new Animaux("Chien", "Savage","Blanc");
 
+
+        System.out.println(animal1.race+animal1.nom + animal1.Couleur);
 
 
 

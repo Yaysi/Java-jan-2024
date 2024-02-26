@@ -11,18 +11,22 @@ public class Login {
 
         System.out.println(" Enter your user name : ");
         String username = in.next();
-        System.out.println("Enter your password : ");
+       System.out.println("Enter your password : ");
         String password = in.next();
 
         if (sysusername.equals(username)){
-            if (syspassword.equals(password)){ System.out.println("Welcome Admin");
+           if (syspassword.equals(password)){ System.out.println("Welcome Admin");
         }else {
-                System.out.println("Please check your password");
-            }}
+               System.out.println("Please check your password");
+           }}
         else {
             System.out.println("Please check your user name");
 
         }
 
-    }
+        String a = "let's go";
+        double result = a.equals("let's go")? 0.5 : 0.25 ;
+        System.out.println(result);
+
+   }
 }

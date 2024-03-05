@@ -17,6 +17,9 @@ public class Switch {
             case 200:
                 System.out.println("Yes man");
 
+            default:
+                System.out.println("non");
+
         }
 
     }

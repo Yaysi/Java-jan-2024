@@ -1,6 +1,7 @@
 package Curs12.Curs;
 
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import java.time.format.DateTimeFormatter;
@@ -21,8 +22,12 @@ public class Curs12 {
         String ville = String.valueOf(suma);
         System.out.println(ville);
 
+        LocalDate date1 = LocalDate.now();
+        System.out.println(date1.format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+
         LocalDateTime ora = LocalDateTime.now();
         System.out.println(ora.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")));
+
 
 
     }

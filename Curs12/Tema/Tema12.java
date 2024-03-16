@@ -3,36 +3,31 @@ package Curs12.Tema;
 import javax.xml.crypto.Data;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class Tema12 {
     public static void main(String[] args) {
-//        String hello = "Hello";
-//        System.out.println(hello.length());
-////        Create a Java program that finds and prints the character at a given index(2) in a string.
-//
-//        Date incrementdate = new Date("1988-09-29");
 
-        LocalDateTime currentDateTime = LocalDateTime.now();
 
-        LocalDateTime givenDateTime = LocalDateTime.of(2024, 2, 3, 13, 33);
+        LocalDateTime givendate = LocalDateTime.of(2024, 02, 17, 15, 20);
+        LocalDate oui = givendate.toLocalDate();
+        LocalTime minut = givendate.toLocalTime();
+        System.out.println("date: "+ oui);
+        System.out.println("time: "+ minut);
 
-        if (givenDateTime.isBefore(currentDateTime)) {
-            System.out.println("Given date-time is before the current date-time.");
-        } else if (givenDateTime.isAfter(currentDateTime)) {
-            System.out.println("Given date-time is after the current date-time.");
+        String datatimp = "2020-10-15 10:20:15";
+        DateTimeFormatter of = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime variable = LocalDateTime.parse(datatimp,of);
+        System.out.println(variable);
 
-        }
+        String neee = "2024-03-01 15:20:30";
+        DateTimeFormatter variable1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime oii= LocalDateTime.parse(neee,variable1);
+        System.out.println(oii);
+
+
+
     }
-
-    }
-//LocalDateTime givenDateTime = LocalDateTime.of(2024, 2, 3, 13, 30);
-//LocalDate date = givenDateTime.toLocalDate();
-////        LocalTime time = givenDateTime.toLocalTime():
-//
-//        System.out.println("Date: " + date);
-//        System.out.println("Time: " + time)
-
-//DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
-//LocalDateTime.parse(dateTimeString, formatter);
+}

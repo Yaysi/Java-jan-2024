@@ -1,11 +1,19 @@
 package Challenges.challenge1;
 
-import java.time.LocalDate;
+import java.util.UUID;
 
 public class Class {
-    public static void main(String[] args) {
-        LocalDate yes = LocalDate.now();
-        System.out.println(yes);
 
+    String name;
+    int id ;
+
+    int grade;
+
+
+
+    public Class(String name, int id, int grade) {
+        this.name = name;
+        this.id = id;
+        this.grade= grade;
     }
 }

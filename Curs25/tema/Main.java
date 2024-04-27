@@ -1,5 +1,8 @@
 package Curs25.tema;
 
+import Curs20.curs.Cat;
+import Curs23.Curs.Animal;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -80,6 +83,12 @@ public class Main {
         }
 
         System.out.println("Tis is the smallest number " + smallestnumber + " Here am I the biggest number "+ bigestnumber);
+
+       Box box= new Box();
+
+       box.Box1("L'hereb");
+        System.out.println(box);
+
 
 
     }

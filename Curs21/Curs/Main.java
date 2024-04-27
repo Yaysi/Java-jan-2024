@@ -12,14 +12,20 @@ public class Main {
        Cities.put(4 ,"Nimic");
        Cities.put(5 ,"Jakarta");
 
-       String City = Cities.get(1);
-        System.out.println(City);
-
-
-
-
         List <Integer> lisofnumber=  new ArrayList<>(List.of(7,8,4,5,9,1));
         Collections.sort(lisofnumber);
+
+        List<String> listofemployee = new ArrayList<>(List.of("Maria","Ramona","Marius","Stefane","Roxana"));
+
+        listofemployee.forEach(list -> {
+
+            System.out.println(list);
+
+        });
+
+        System.out.println("Hello");
+
+
 
         lisofnumber.forEach(number-> {
 
